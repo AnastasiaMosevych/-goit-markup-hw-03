@@ -289,6 +289,16 @@ p {
     background-color: var(--primary-background-color);
 }
 
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+.button .item:not(:last-child) {
+    margin-right: 8px;
+    margin-bottom: 50px;
+}
+
 .filter {
     display: inline-block;
     border-radius: 4px;
