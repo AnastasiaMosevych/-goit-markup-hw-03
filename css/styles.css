@@ -292,14 +292,16 @@ p {
 .button {
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
+    
 }
 
 .button .item:not(:last-child) {
     margin-right: 8px;
-    margin-bottom: 50px;
+    
 }
 
-.filter {
+.item .filter {
     display: inline-block;
     border-radius: 4px;
     padding: 6px 25px;
