@@ -18,6 +18,12 @@ body {
     line-height: 1.71;
 }
 
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -36,6 +42,13 @@ body {
     padding-top: 23px;
     border-bottom: 1px solid #ECECEC;
 }
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 
 .logo {
     color: var(--accent-color);
@@ -59,22 +72,28 @@ body {
     text-decoration: none;
 }
 
-.list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
 /* Site nav */
 
-.site-nav .link {
-    color: var(--title-text-color);
+.site-nav {
+    display: flex;
+    margin-left: 93px;
+}
 
+
+.site-nav .item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.site-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
+    color: var(--title-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-
     text-decoration: none;
 }
 
@@ -90,6 +109,16 @@ body {
 
 /* Contacts */
 
+.contacts {
+    display: flex;
+    margin-left: auto;
+}
+
+.contacts .item+.item {
+    margin-left: 50px;
+
+}
+
 .contacts .link {
     color: var(--primary-text-color);
 
@@ -97,7 +126,6 @@ body {
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
-
     text-decoration: none;
 }
 
@@ -132,7 +160,6 @@ p {
     font-size: 44px;
     line-height: 1.4;
     width: 696px;
-    
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
@@ -155,12 +182,6 @@ p {
 
 .btn:active {
     color: #2F303A;
-}
-
-
-.contacts .link:hover,
-.contacts .link:focus {
-    color: var(--accent-color);
 }
 
 /* Sections */
