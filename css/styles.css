@@ -204,6 +204,12 @@ p {
     margin-right: 30px;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .section .section-title,
 .section-team .section-title {
     color: var(--title-text-color);
@@ -350,7 +356,7 @@ p {
 }
 
 .projects .projects-title {
-    padding-bottom: 4px;
+    margin-bottom: 4px;
     color: var(--title-text-color);
 
     font-weight: 700;
